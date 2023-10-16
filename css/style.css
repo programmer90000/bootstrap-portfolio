@@ -4,6 +4,33 @@
     box-sizing: border-box;
 }
 
+
+h1 {
+    font-size: 2em;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    color: #3571c0;
+    width: 110px;
+}
+
+h1::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: #3571c0;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    bottom: 0;
+}
+
+h1 span {
+    display: block;
+    padding-bottom: 5px;
+}
+
 .navbar {
     background-color: #31343d;
     padding: 0;
@@ -59,4 +86,65 @@
     background-color: #91CBCE;
     padding: 15px;
     font-weight: bold;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    margin: 50px 0;
+}
+
+.about-me {
+    padding-left: 0;
+    width: 115px;
+    margin-left: 150px;
+}
+
+.about-me h1 {
+    display: inline-block;
+    color: #3571c0;
+    text-align: left;
+    height: 100%;
+    font-size: 32px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.about-me h1 span {
+    display: block;
+    padding-bottom: 5px;
+}
+
+.about-me h1::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: #3571c0;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    bottom: 0;
+}
+
+.text {
+    padding-left: 0;
+    margin-left: 40px;
+}
+
+.text p {
+    margin-left: 50px;
+    margin-right: 80px;
+    font-size: 20px;
+    color: #3571C0;
+    margin-left: 50px;
+    font-family: sans-serif;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-right: 80px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
 }
