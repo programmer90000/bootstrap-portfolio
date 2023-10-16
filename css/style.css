@@ -148,3 +148,160 @@ h1 span {
     font-size: 20px;
     font-family:'Times New Roman', Times, serif;
 }
+
+#work-section {
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 400px 400px;
+    grid-template-areas:
+    "main-img main-img"
+    "main-img main-img"
+    "small-img-1 small-img-2"
+    "small-img-3 small-img-4"
+    ;
+    margin: 50px 0;
+    position: relative;
+}
+
+#work-section h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    margin-left: 150px;
+    color: #3571c0;
+}
+
+#work-section h1 span {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#work-section h1::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: #3571c0;
+    position: absolute;
+    right: -10px;
+    top: 0;
+}
+
+#work-section h1 ~ * {
+    position: relative;
+    left: 300px;
+}
+
+#work-section #main-img {
+    grid-area: main-img;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/prework-study-guide-website.png");
+    border: 5px solid #ACC2CF;
+    padding: 0;
+}
+
+#work-section #small-img-1 {
+    grid-area: small-img-1;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/code-refactor-1.png");
+    border: 5px solid #ACC2CF;
+    padding: 0;
+}
+
+#work-section #small-img-2 {
+    grid-area: small-img-2;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/img-2.jpg");
+    border: 5px solid #ACC2CF;
+    padding: 0;
+}
+
+#work-section #small-img-3 {
+    grid-area: small-img-3;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/code-refactor-3.png");
+    border: 5px solid #ACC2CF;
+    padding: 0;
+}
+
+#work-section #small-img-4 {
+    grid-area: small-img-4;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/img-1.jpg");
+    border: 5px solid #ACC2CF;
+    padding: 0;
+}
+
+#work-section .categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+    text-decoration: none;
+    color: #000000;
+}
+
+#work-section .categoryGridArea .text {
+    background-color: #acc2cf;
+    padding: 10px;
+    color: #000000;
+    font-size: 18px;
+    width: 175px;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+#work-section {
+    padding-left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+#work-section h1 {
+    display: inline-block;
+    color: #3571c0;
+    text-align: left;
+    height: 100%;
+    margin-left: 150px !important;
+    font-size: 32px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 150px;
+    width:fit-content;
+}
+
+#work-section h1 span {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#work-section h1::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: #3571c0;
+    position: absolute;
+    right: -18px;
+    top: 0;
+    bottom: 0;
+}
+
+#work-section .col-2 {
+    margin-left: 0;
+}
+
+#work-section .categoryGridArea .text h3 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#work-section .categoryGridArea .text h6 {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#work-section .categoryGridArea .text h3 {
+    margin: 0;
+}
