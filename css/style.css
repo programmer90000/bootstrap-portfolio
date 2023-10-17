@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+}
+
 
 h1 {
     font-size: 2em;
@@ -34,6 +38,7 @@ h1 span {
 .navbar {
     background-color: #31343d;
     padding: 0;
+    width: 100%;
 }
 
 #navbarNav {
@@ -100,7 +105,7 @@ h1 span {
 .about-me {
     padding-left: 0;
     width: 115px;
-    margin-left: 150px;
+    margin-left: 115px;
 }
 
 .about-me h1 {
@@ -168,7 +173,6 @@ h1 span {
     top: 0;
     left: 0;
     display: inline-block;
-    margin-left: 150px;
     color: #3571c0;
 }
 
@@ -264,10 +268,9 @@ h1 span {
     color: #3571c0;
     text-align: left;
     height: 100%;
-    margin-left: 150px !important;
+    margin-left: 115px;
     font-size: 32px;
     font-family:'Times New Roman', Times, serif;
-    margin-left: 150px;
     width:fit-content;
 }
 
@@ -288,10 +291,6 @@ h1 span {
     bottom: 0;
 }
 
-#work-section .col-2 {
-    margin-left: 0;
-}
-
 #work-section .categoryGridArea .text h3 {
     font-size: 19px;
     font-weight: bold;
@@ -304,6 +303,55 @@ h1 span {
 
 #work-section .categoryGridArea .text h3 {
     margin: 0;
+}
+
+.skills {
+    padding-left: 0;
+    width: 115px;
+    margin-left: 0;
+}
+
+#skills .col-2 {
+    margin-left: 115px;
+    width: fit-content;
+}
+
+#skills h1 {
+    display: inline-block;
+    color: #3571c0;
+    text-align: left;
+    height: 100%;
+    font-size: 32px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#skills h1 span {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#skills h1::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: #3571c0;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    bottom: 0;
+}
+
+#skills .text {
+    width: fit-content;
+}
+
+#skills .text p {
+    color: #000000;
+}
+
+#skills .text ul li {
+    width: fit-content;
 }
 
 #contact-me {
@@ -355,7 +403,7 @@ h1 span {
 }
 
 #contact-me .col-2 {
-    margin-left: 145px;
+    margin-left: 115px;
     width: 103px;
 }
 
@@ -477,4 +525,105 @@ h1 span {
 #small-img-4 .card-body p {
     position: absolute;
     top: 25px;
+}
+
+.my-5 {
+    margin-bottom: 0 !important;
+}
+
+.my-5 footer .container .mb-5 {
+    margin-bottom: 0 !important;
+}
+
+.my-5 footer .container .mt-5 a {
+    text-decoration: none;
+}
+
+.my-5 footer .container .mt-5 a:hover {
+    text-decoration: underline;
+    color: #ff5454 !important;
+}
+
+.margin-less {
+    margin: 25px;
+}
+
+@media screen and (max-width: 1080px) {
+    #about-me .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-me .row .about-me {
+        margin: 0;
+    }
+
+    #about-me .row .about-me h1::after {
+        display: none;
+    }
+
+    #about-me .row .about-me h1 span {
+        display: inline;
+        padding-right: 15px;
+    }
+
+    #work-section {
+        grid-template-rows: 425px 425px 425px 425px 425px;
+        grid-template-columns: 400px;
+        grid-template-areas:
+        "main-img"
+        "small-img-1"
+        "small-img-2"
+        "small-img-3"
+        "small-img-4"
+        ;
+    }
+
+    #work-section h1 {
+        margin-left: 43%;
+        width: fit-content;
+        height: fit-content;
+        margin-top: -40px;
+    }
+
+    #work-section h1::after {
+        display: none;
+    }
+
+    #skills .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills .row .col-2 {
+        margin: 0;
+    }
+
+    #skills .row .col-2 h1::after {
+        display: none;
+    }
+
+    #contact-me .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact-me .row .col-2 {
+        margin: 0;
+    }
+
+    #contact-me .row .col-2 h1 {
+        display: flex;
+    }
+
+    #contact-me .row .col-2 h1 span {
+        padding-right: 15px;
+    }
+
+    #contact-me .row .col-2 h1::after {
+        display: none;
+    }
 }
