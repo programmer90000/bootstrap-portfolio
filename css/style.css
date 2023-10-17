@@ -151,7 +151,7 @@ h1 span {
 
 #work-section {
     display: grid;
-    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 300px 300px;
     grid-template-columns: 400px 400px;
     grid-template-areas:
     "main-img main-img"
@@ -195,14 +195,14 @@ h1 span {
 
 #work-section #main-img {
     grid-area: main-img;
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/prework-study-guide-website.png");
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5));
     border: 5px solid #ACC2CF;
     padding: 0;
 }
 
 #work-section #small-img-1 {
     grid-area: small-img-1;
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/code-refactor-1.png");
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5));
     border: 5px solid #ACC2CF;
     padding: 0;
 }
@@ -283,7 +283,7 @@ h1 span {
     height: 100%;
     background-color: #3571c0;
     position: absolute;
-    right: -18px;
+    right: -42px;
     top: 0;
     bottom: 0;
 }
@@ -304,4 +304,177 @@ h1 span {
 
 #work-section .categoryGridArea .text h3 {
     margin: 0;
+}
+
+#contact-me {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#contact-me h1 {
+    position: relative;
+    display: inline-block;
+    width: 115px;
+    color: #3571c0;
+}
+
+#contact-me h1 span {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#contact-me h1::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: #3571c0;
+    position: absolute;
+    right: -10px;
+    top: 0;
+}
+
+#contact-me .links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    align-items: center;
+}
+
+#contact-me .links a {
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000000;
+    font-weight: 600;
+    margin-left: 100px;
+}
+
+.col-6 {
+    width: auto;
+}
+
+#contact-me .col-2 {
+    margin-left: 145px;
+    width: 103px;
+}
+
+#contact-me .col-2 h1 {
+    width: 110px;
+}
+
+#contact-me .col-6 {
+    display: flex;
+}
+
+.col-2 {
+    padding: 0;
+}
+
+#contact-me h1 {
+    display: inline-block;
+    color: #3571c0;
+    text-align: left;
+    height: 100%;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#contact-me .row {
+    margin: 0;
+}
+
+.card {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 50px;
+    height: 100%;
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    height: 70%;
+}
+
+.card .card-body {
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.card-body h5 {
+    position: absolute;
+    bottom: -40px;
+}
+
+.card-body p {
+    position: absolute;
+    bottom: -50px;
+}
+
+.card-text {
+    top: 25px;
+}
+
+#main-img .card img {
+    height: 80%;
+}
+
+#main-img .card-body {
+    height: 20%;
+}
+
+#main-img .card-body h5 {
+    position: absolute;
+    top: 0;
+}
+
+#main-img .card-body p {
+    position: absolute;
+    top: 30px;
+}
+
+#small-img-1 .card-body h5 {
+    position: absolute;
+    top: 0;
+}
+
+#small-img-1 .card-body p {
+    position: absolute;
+    top: 25px;
+}
+
+#small-img-2 .card-body h5 {
+    position: absolute;
+    top: 0;
+}
+
+#small-img-2 .card-body p {
+    position: absolute;
+    top: 25px;
+}
+
+#small-img-3 .card-body h5 {
+    position: absolute;
+    top: 0;
+}
+
+#small-img-3 .card-body p {
+    position: absolute;
+    top: 25px;
+}
+
+#small-img-4 .card-body h5 {
+    position: absolute;
+    top: 0;
+}
+
+#small-img-4 .card-body p {
+    position: absolute;
+    top: 25px;
 }
